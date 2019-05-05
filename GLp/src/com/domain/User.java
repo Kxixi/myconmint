@@ -1,5 +1,5 @@
 package com.domain;
-
+//66666
 public class User {
 	private String username;
 	private String pwd;
