@@ -1,6 +1,8 @@
 package com.domain;
 //66666
+//77777
 public class User {
+
 	private String username;
 	private String pwd;
 	public String getUsername() {
