@@ -14,7 +14,7 @@ import com.domain.User;
 import com.servuce.loginservice;
 
 /**
- * Servlet implementation class login
+ * test
  */
 @WebServlet("/login")
 public class login extends HttpServlet {
@@ -45,17 +45,17 @@ public class login extends HttpServlet {
 		try {
 			List list = loginservice.login(user);
 			if(!list.isEmpty()) {
-				System.out.println("³É¹¦");
+				System.out.println("ï¿½É¹ï¿½");
 				request.getSession().setAttribute("name", name);
 				response.sendRedirect(contextPath+"/index.jsp");
 			}else {
-				request.setAttribute("erro", "ÕËºÅ»òÃÜÂë´íÎó");
+				request.setAttribute("erro", "ï¿½ËºÅ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 				request.getRequestDispatcher("login.jsp").forward(request, response);
 			}
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.println("µÇÂ½Ê§°Ü");
+			System.out.println("ï¿½ï¿½Â½Ê§ï¿½ï¿½");
 		}
 	}
 
